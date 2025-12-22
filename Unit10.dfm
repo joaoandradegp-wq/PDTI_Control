@@ -1,0 +1,504 @@
+object Form10: TForm10
+  Left = 241
+  Top = 160
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'T-SYSTEMS - CONSULTA GERAL'
+  ClientHeight = 471
+  ClientWidth = 587
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  OnClose = FormClose
+  OnDestroy = FormDestroy
+  PixelsPerInch = 96
+  TextHeight = 13
+  object fechar: TSpeedButton
+    Left = 546
+    Top = 436
+    Width = 36
+    Height = 29
+    Glyph.Data = {
+      0E060000424D0E06000000000000360000002800000016000000160000000100
+      180000000000D8050000C30E0000C30E00000000000000000000FFFFFFF2F2F2
+      F2F2F2D3D3D3E8E8E8F5F5F5DBDBDBDDDDDDECECECEEEEEED3D3D3EBEBEBF7F7
+      F723230F4F4F00B2B2A8E9E9E9D6D6D6EBEBEBFAFAFAFFFFFFFFFFFF0000FFFF
+      FFF0F0F0D8D8D8EDEDEDEAEAEADFDFDFDCDCDCF4F4F4E6E6E6D7D7D7F2F2F2E7
+      E7E7DDDDDD4C4C0CFFFF006868119B9B9BF4F4F4E7E7E7DBDBDBE6E6E6FFFFFF
+      0000D3D3D3E4E4E4EFEFEFE4E4E4D8D8D8EDEDEDF3F3F3D3D3D3E7E7E7F1F1F1
+      DFDFDFDBDBDBECECEC4D4D0DFFFF008D8D00515105878781DFDFDFEDEDEDECEC
+      ECD3D3D30000E6E6E6EDEDEDE1E1E1DBDBDBF5F5F5E3E3E3DCDCDCEAEAEAEAEA
+      EAE0E0E0DBDBDBF6F6F6E3E3E34D4D0DFFFF008F8F007F7F0056560DA1A1A1E2
+      E2E2DBDBDBF3F3F300004B4B4B5050504E4E4E4848484F4F4F5050504A4A4A4C
+      4C4C444444F0F0F0F3F3F3D3D3D3E7E7E74E4E0EFFFF008F8F007F7F007D7D00
+      4C4C0D3232324848484E4E4E0000BFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBF
+      BFBFBFBFBFBF4A4A4ADFDFDFDFDFDFE9E9E9EBEBEB4D4D0DFFFF008F8F007F7F
+      007F7F00474700636363BFBFBFBFBFBF0000BFBFBFBFBFBFBFBFBFBFBFBFBFBF
+      BFBFBFBFB0B0B0BFBFBF4040403F3F3F3737373737373F3F3F434303FFFF008F
+      8F007F7F007F7F00474700636363BFBFBFBFBFBF0000BFBFBFBFBFBFBFBFBFBF
+      BFBFBFBFBFBFBFBF3D3D3D8F8F8F3E3E3E7F7F7F7F7F7F7F7F7F7F7F7F474707
+      FFFF008F8F007F7F007F7F00474700636363BFBFBFBFBFBF0000BFBFBFBFBFBF
+      BFBFBFBFBFBFBFBFBFBFBFBF3C3C304D4D141515137F7F7F7F7F7F7F7F7F7F7F
+      7F474707FFFF008D8D007777007D7D00474700636363BFBFBFBFBFBF0000BFBF
+      BFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBF4646309A9A004545046161617F7F7F7F
+      7F7F7F7F7F474707FFFF005F5F08171717676700474700636363BFBFBFBFBFBF
+      0000BFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBF474727EDED0092920045450E
+      6363637F7F7F7F7F7F474707FFFF004747276B6B6B676700474700636363BFBF
+      BFBFBFBF0000AEAEAE57574531310A272700272700272700424200FFFF00F9F9
+      009898004242006363637F7F7F474707FFFF007E7E002727006E6E0047470063
+      6363BFBFBFBFBFBF00008989898C8C13CFCF01CFCF00CFCF00CFCF00D5D500FF
+      FF00FFFF00EDED0098980045450E616161474707FFFF008F8F007F7F007F7F00
+      474700636363BFBFBFBFBFBF0000898989A1A113FEFE2CFFFFAFFFFFAFFFFFAF
+      FFFFAFFFFFAFFFFFDBFFFF6DE3E3004B4B095B5B5B474707FFFF008F8F007F7F
+      007F7F00474700636363BFBFBFBFBFBF0000A7A7A76F6F4879790C7A7A0A7A7A
+      0A7A7A0A8A8A09FFFF3EFFFF70E4E4005F5F005858587F7F7F474707FFFF008F
+      8F007F7F007F7F00474700636363BFBFBFBFBFBF0000BFBFBFB1B1B1A9A9A9A9
+      A9A9A9A9A9A9A9A94C4C2CFFFF0DE6E6075959085858537F7F7F7F7F7F474707
+      FFFF008F8F007F7F007F7F00474700636363BFBFBFBFBFBF0000BFBFBFBFBFBF
+      BFBFBFBFBFBFBFBFBFBFBFBF505030E3E3005F5F035757577F7F7F7F7F7F7F7F
+      7F474707FFFF008F8F007F7F007F7F00474700636363BFBFBFBFBFBF0000BFBF
+      BFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBF4242356E6E2521211B7F7F7F7F7F7F7F
+      7F7F7F7F7F5E5E52999906D5D5008787007F7F00474700636363BFBFBFBFBFBF
+      0000BFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBF7070708888884444447F7F7F
+      7F7F7F7F7F7F7F7F7F7F7F7F565656999906DBDB00898900474700636363BFBF
+      BFBFBFBF0000BFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBF4444
+      447F7F7F7F7F7F7F7F7F7F7F7F7F7F7F7F7F7F5E5E529B9B03D7D7004C4C0076
+      7676BFBFBFBFBFBF0000BFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBF
+      BFBF4141415656565656565656565656565656565656565656562E2E2E888807
+      65650C888888BFBFBFBFBFBF0000BFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBFBF
+      BFBFBFBFBFBF9696968989898989898989898989898989898989898989898989
+      89898989898989B1B1B1BFBFBFBFBFBF0000}
+    OnClick = fecharClick
+  end
+  object Bevel7: TBevel
+    Left = -2
+    Top = 431
+    Width = 587
+    Height = 9
+    Shape = bsTopLine
+  end
+  object Bevel3: TBevel
+    Left = -10
+    Top = 248
+    Width = 595
+    Height = 9
+    Shape = bsTopLine
+  end
+  object Bevel1: TBevel
+    Left = 0
+    Top = 48
+    Width = 505
+    Height = 9
+    Shape = bsTopLine
+  end
+  object Label1: TLabel
+    Left = 8
+    Top = 29
+    Width = 66
+    Height = 12
+    AutoSize = False
+    Caption = 'Mostrando:'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 74
+    Top = 29
+    Width = 98
+    Height = 13
+    Caption = 'Nenhum Registro'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label21: TLabel
+    Left = 8
+    Top = 7
+    Width = 44
+    Height = 13
+    Caption = 'C'#243'digo:'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clRed
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object dbcodigo: TDBText
+    Left = 56
+    Top = 8
+    Width = 53
+    Height = 13
+    AutoSize = True
+    DataField = 'C'#243'digo'
+    DataSource = DataSource1
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 8
+    Top = 344
+    Width = 85
+    Height = 16
+    Caption = 'Observa'#231#245'es:'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label9: TLabel
+    Left = 8
+    Top = 256
+    Width = 40
+    Height = 16
+    Caption = 'Nome:'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label10: TLabel
+    Left = 296
+    Top = 296
+    Width = 41
+    Height = 16
+    Caption = 'Sisdia:'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label11: TLabel
+    Left = 296
+    Top = 256
+    Width = 35
+    Height = 16
+    Caption = 'Setor:'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 296
+    Top = 60
+    Width = 35
+    Height = 16
+    Caption = 'Setor:'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 8
+    Top = 296
+    Width = 39
+    Height = 16
+    Caption = 'Senha'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label6: TLabel
+    Left = 152
+    Top = 296
+    Width = 68
+    Height = 16
+    Caption = 'T-Systems:'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+  end
+  object DBGrid1: TDBGrid
+    Left = 8
+    Top = 88
+    Width = 457
+    Height = 153
+    Ctl3D = True
+    DataSource = DataSource1
+    Options = []
+    ParentCtl3D = False
+    ReadOnly = True
+    TabOrder = 0
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'MS Sans Serif'
+    TitleFont.Style = []
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'nome'
+        Title.Caption = 'Nome'
+        Width = 240
+        Visible = True
+      end
+      item
+        Alignment = taCenter
+        Expanded = False
+        FieldName = 'tsystems'
+        Title.Alignment = taCenter
+        Title.Caption = 'T-System'
+        Width = 195
+        Visible = True
+      end>
+  end
+  object GroupBox1: TGroupBox
+    Left = 477
+    Top = 43
+    Width = 106
+    Height = 78
+    TabOrder = 8
+    object SpeedButton1: TSpeedButton
+      Left = 8
+      Top = 18
+      Width = 89
+      Height = 23
+      Caption = '&Abrir'
+      Glyph.Data = {
+        06030000424D06030000000000003600000028000000100000000F0000000100
+        180000000000D002000000000000000000000000000000000000FFFFFFFFFFFF
+        6666666666666666666666666666666666666666666666666666666666666666
+        66666666666666FFFFFFFFFFFF1C82B51A80B3177DB0157BAE1278AB0F75A80C
+        72A50A70A3076DA0056B9E03699C01679A0066996666666666662187BA66CCFF
+        1F85B899FFFF6ED4FF57ACD057ACD057ACD057ACD057ACD057ACD057ACD03AA0
+        D399FFFF006699666666248ABD66CCFF268CBF99FFFFCDBFBBCDBFBBCDBFBBCD
+        BFBBCDBFBBCDBFBBCDBFBBCDBFBBCDBFBBCDBFBB01679A666666278DC066CCFF
+        2C92C599FFFFCDBFBBF0EBDDF0EBDDF0EBDDF0EBDDF0EBDDF0EBDDF0EBDDF0EB
+        DDCDBFBB03699C666666298FC266CCFF3298CB99FFFFCDBFBBF0EBDDF0EBDDF0
+        EBDDF0EBDDF0EBDDF0EBDDF0EBDDF0EBDDCDBFBB056B9E6666662C92C56ED4FF
+        3399CC99FFFFCDBFBBF0EBDDFFDAAEFFDAAEFFDAAEFFDAAEFFDAAEFFDAAEF0EB
+        DDCDBFBB076DA06666662E94C77AE0FF3399CCFFFFFFF0EBDDFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0EBDD0A70A36666663096C985EBFF
+        3399CC3399CCA9795EB6BAB0B6BAB0B6BAB0B6BAB0B6BAB0B6BAB0B6BAB0B6BA
+        B0A9795E1A80B3FFFFFF3298CB91F7FF8EF4FF8EF4FFAD7D61FFF3E2FFF3E2FF
+        F3E2FFF3E2FFF3E2FFF3E2FFF3E2FFF3E2AD7D61666666FFFFFF3399CCFFFFFF
+        99FFFF99FFFFB18165FFF6EAFFDAB4FFDAB4FFDAB4FFDAB4FFDAB4FFDAB4FFF6
+        EAB18165666666FFFFFFFFFFFF3399CCFFFFFFFFFFFFB78769FFF9F2FFF9F2FF
+        F9F2FFF9F2FFF9F2FFF9F2FFE8CBFFE8CBB78769666666FFFFFFFFFFFFFFFFFF
+        3399CC3298CBBC8C6CFFFDFAFFDAB4FFDAB4FFDAB4FFDAB4FFFDFAFDA730FDA7
+        30FDA730FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFC09070FFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFB75CFFB75CFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFC49473C49473C49473C49473C49473C49473C49473FFB75CFFFF
+        FFFFFFFFFFFFFFFFFFFF}
+      OnClick = SpeedButton1Click
+    end
+    object atualizar: TSpeedButton
+      Left = 8
+      Top = 40
+      Width = 89
+      Height = 23
+      Caption = 'A&tualizar'
+      Enabled = False
+      Glyph.Data = {
+        A6020000424DA6020000000000003600000028000000100000000D0000000100
+        1800000000007002000000000000000000000000000000000000FFFFFFFFFFFF
+        7070705858585858585858585858585858585858585858585858585858585858
+        58585858707070FFFFFFFFFFFF1B81B41B81B4177DB0147AAD147AAD0F75A80B
+        71A40B71A4076DA0046A9D046A9D01679A01679A4040407070702187BA66CCFF
+        1F85B899FFFF6ED4FF6ED4FF6ED4FF6ED4FF3965C43965C46ED4FF6ED4FF3AA0
+        D399FFFF01679A585858248ABD66CCFF248ABD99FFFF80E6FF80E6FF80E6FF80
+        E6FF1527AA0B14A076D8FB80E6FF43A9DC99FFFF01679A585858278DC066CCFF
+        2C92C599FFFF85EBFF85EBFF85EBFF3965C40F1BA4192CAB2D4DB985EBFF4DB3
+        E699FFFF046A9D585858298FC266CCFF3399CC99FFFF91F7FF91F7FF69B3E30B
+        14A070BFE875C7EB0B14A075C7EB56BCEF99FFFF046A9D5858582C92C56ED4FF
+        3399CC99FFFF99FFFF8CE9F60F1BA4406CC499FFFF99FFFF2D4DB91E33AD5FC5
+        F899FFFF076DA05858582C92C580E6FF2C92C5FFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFF5F6FB0B14A05599DCFFFFFF0B71A47070703399CC85EBFF
+        80E6FF2C92C52C92C52C92C52C92C52C92C52C92C5278DC0248ABD1345AA0B14
+        A01B81B41B81B47070703399CC91F7FF8EF4FF8EF4FF8EF4FF8EF4FF8EF4FFFF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFF0B14A02B2F81656565FFFFFF3399CCFFFFFF
+        99FFFF99FFFF99FFFF99FFFFFFFFFF248ABD2187BA1B81B41B81B41B81B41259
+        AA0B14A07E7F8EFFFFFFFFFFFF3399CCFFFFFFFFFFFFFFFFFFFFFFFF298FC2FF
+        FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF343AB07074C2FFFFFFFFFFFFFFFFFF
+        3399CC3399CC3399CC2C92C5FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFFF}
+      OnClick = atualizarClick
+    end
+  end
+  object dbsisdia: TDBEdit
+    Left = 296
+    Top = 312
+    Width = 129
+    Height = 19
+    BevelInner = bvNone
+    Color = cl3DLight
+    Ctl3D = False
+    DataField = 'sisdia'
+    DataSource = DataSource1
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -9
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentCtl3D = False
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 6
+  end
+  object dbnome: TDBEdit
+    Left = 8
+    Top = 272
+    Width = 273
+    Height = 19
+    BevelInner = bvNone
+    Color = cl3DLight
+    Ctl3D = False
+    DataField = 'nome'
+    DataSource = DataSource1
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -9
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentCtl3D = False
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 2
+  end
+  object dbsetor: TDBEdit
+    Left = 296
+    Top = 272
+    Width = 129
+    Height = 19
+    BevelInner = bvNone
+    Color = cl3DLight
+    Ctl3D = False
+    DataField = 'setor'
+    DataSource = DataSource1
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -9
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentCtl3D = False
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 3
+  end
+  object dbmemo: TDBMemo
+    Left = 8
+    Top = 361
+    Width = 417
+    Height = 56
+    BevelInner = bvNone
+    Color = cl3DLight
+    Ctl3D = False
+    DataField = 'obs'
+    DataSource = DataSource1
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -9
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    MaxLength = 100
+    ParentCtl3D = False
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 7
+  end
+  object combosetor: TComboBox
+    Left = 336
+    Top = 58
+    Width = 129
+    Height = 21
+    Style = csDropDownList
+    Enabled = False
+    ItemHeight = 13
+    TabOrder = 1
+    OnChange = combosetorChange
+    Items.Strings = (
+      'TODOS'
+      'VEICULOS'
+      'PE'#199'AS'
+      'OFICINA'
+      'ADMINISTRA'#199#195'O'
+      'REDE MINEIRA')
+  end
+  object dbsenha: TDBEdit
+    Left = 8
+    Top = 312
+    Width = 129
+    Height = 19
+    BevelInner = bvNone
+    Color = cl3DLight
+    Ctl3D = False
+    DataField = 'senha'
+    DataSource = DataSource1
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -9
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentCtl3D = False
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 4
+  end
+  object dbtsystem: TDBEdit
+    Left = 152
+    Top = 312
+    Width = 129
+    Height = 19
+    BevelInner = bvNone
+    Color = cl3DLight
+    Ctl3D = False
+    DataField = 'tsystems'
+    DataSource = DataSource1
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -9
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentCtl3D = False
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 5
+  end
+  object ADOQuery1: TADOQuery
+    Connection = Login.ADOConnection1
+    Parameters = <>
+    SQL.Strings = (
+      'select * from tsystems order by nome')
+    Left = 464
+    Top = 368
+  end
+  object DataSource1: TDataSource
+    DataSet = ADOQuery1
+    Left = 496
+    Top = 368
+  end
+end
