@@ -255,16 +255,6 @@ O Phobos DTI Control foi projetado como uma ferramenta central de administraçã
 
 ---
 
-<h2>📥 Download</h2>
-
-<p align="center">
-  <a href="#">
-    <img src="https://img.shields.io/badge/Download-Phobos%20DTI%20Control-blue?style=for-the-badge">
-  </a>
-</p>
-
----
-
 <p align="center">
 Sistema desenvolvido para controle e administração de infraestrutura de TI em ambiente corporativo, integrando rede, comunicação interna e gestão operacional.
 </p>
